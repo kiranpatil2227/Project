@@ -1,0 +1,200 @@
+{
+  "User": [
+    {
+      "first_name": "rajesh",
+      "last_name": "R",
+      "email": "shashidhara.s@muraai.com",
+      "phone": "1123345678",
+      "dob": "2023-10-19",
+      "gender": "male",
+      "password": "123",
+      "confpassword": "123",
+      "id": 14
+    },
+    {
+      "first_name": "monica",
+      "last_name": "N",
+      "email": "monica@gmail.com",
+      "phone": "1123345678",
+      "dob": "2023-11-01",
+      "gender": "female",
+      "password": "123",
+      "confpassword": "123",
+      "id": 15
+    },
+    {
+      "first_name": "Savitha ",
+      "last_name": "s",
+      "email": "savitha@gmail.com",
+      "phone": "9008348693",
+      "dob": "2023-10-18",
+      "gender": "female",
+      "password": "savi",
+      "confpassword": "savi",
+      "id": 16
+    },
+    {
+      "first_name": "saikumar",
+      "last_name": "R",
+      "email": "sai@gmail.com",
+      "phone": "1123345678",
+      "dob": "2023-10-26",
+      "gender": "male",
+      "password": "456",
+      "confpassword": "456",
+      "id": 21
+    },
+    {
+      "first_name": "Pradeep",
+      "last_name": "ks",
+      "email": "pradeep@gmail.com",
+      "phone": "1123345678",
+      "dob": "2023-10-28",
+      "gender": "male",
+      "password": "ksp",
+      "confpassword": "ksp",
+      "id": 24
+    },
+    {
+      "first_name": "kumar",
+      "last_name": "k",
+      "email": "kumar@gmail.com",
+      "phone": "1123345678",
+      "dob": "2023-10-26",
+      "gender": "male",
+      "password": "kumar",
+      "confpassword": "kumar",
+      "id": 39
+    },
+    {
+      "first_name": "Priyanka",
+      "last_name": "S",
+      "email": "priyanka@gmail.com",
+      "phone": "1123345678",
+      "dob": "2023-11-04",
+      "gender": "female",
+      "password": "priyanka",
+      "confpassword": "priyanka",
+      "id": 40
+    },
+    {
+      "first_name": "Monica",
+      "last_name": "N",
+      "email": "monica@gmail.com",
+      "phone": "1234567890",
+      "dob": "2023-10-21",
+      "gender": "female",
+      "password": "123456",
+      "confpassword": "123456",
+      "id": 41
+    },
+    {
+      "first_name": "shashi",
+      "last_name": "s",
+      "email": "shashiblr74@gmail.com",
+      "phone": "9741885325",
+      "dob": "2023-10-27",
+      "gender": "male",
+      "password": "shashi",
+      "confpassword": "shashi",
+      "id": 42
+    },
+    {
+      "first_name": "Ramk",
+      "last_name": "ram",
+      "email": "shas18cv@cmrit.ac.in",
+      "phone": "1123345678",
+      "dob": "2023-10-20",
+      "gender": "male",
+      "password": "ram",
+      "confpassword": "ram",
+      "id": 43
+    },
+    {
+      "first_name": "shashi",
+      "last_name": "s",
+      "email": "shashi@gmail.com",
+      "phone": "9876544336",
+      "dob": "2023-10-11",
+      "gender": "male",
+      "password": "abc",
+      "confpassword": "abc",
+      "id": 44
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productid": "001",
+      "productname": "Hp Laptop",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "black",
+      "config": "8GB+128GB"
+    },
+    {
+      "productid": "002",
+      "productname": "iphone",
+      "quantity": 2,
+      "cost": 50000,
+      "colour": "purple",
+      "config": "8GB+128GB"
+    },
+    {
+      "productid": "003",
+      "productname": "Dell laptop",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "white",
+      "config": "8GB+128GB"
+    },
+    {
+      "productid": "004",
+      "productname": "Smart watch",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "black",
+      "config": "6GB+238GB"
+    },
+    {
+      "productid": "005",
+      "productname": "Redmi",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "blue",
+      "config": "6GB+238GB"
+    },
+    {
+      "productid": "006",
+      "productname": "Lenova laptop",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "red",
+      "config": "8GB+128GB"
+    },
+    {
+      "productid": "007",
+      "productname": "Mac",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "white",
+      "config": "6GB+238GB"
+    },
+    {
+      "productid": "008",
+      "productname": "Realme",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "Green",
+      "config": "8GB+128GB"
+    },
+    {
+      "productid": "009",
+      "productname": "Samsung",
+      "quantity": 10,
+      "cost": 50000,
+      "colour": "white",
+      "config": "6GB+238GB"
+    }
+  ]
+}

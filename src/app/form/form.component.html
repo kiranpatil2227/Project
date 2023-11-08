@@ -1,0 +1,72 @@
+<div class="w-1/2 ml-72 mt-32 ">
+    <div class="border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 p-6">
+      <legend class="-mt-5 h-15 w-full font-bold bg-blue-400 text-xl text-center">Registration Form</legend>
+      
+      <form [formGroup]="addUser" class="flex flex-wrap -mx-3 "   >
+  
+        <div class="w-1/2 p-2">
+          <label for="first_name" class="block font-medium text-gray-700">First Name</label>
+          <input type="text" id="first_name" placeholder="Enter First Name" formControlName="first_name" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['first_name'].getError('minlength')!=null" class="text-red-500">First name should be atleast 4 characters</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="last_name" class="block font-medium text-gray-700">Last Name</label>
+          <input type="text" id="last_name" placeholder="Enter Last Name" formControlName="last_name" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="email" class="block font-medium text-gray-700">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" formControlName="email" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['email'].getError('requird')!=null" class="text-red-500">email is mandatory</span>
+          <span *ngIf="war['email'].getError('email')!=null" class="text-red-500">email requird</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="phone" class="block font-medium text-gray-700">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter Phone Number" formControlName="phone" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['phone'].getError('pattern')!=null" class="text-red-500">enter only numbers(10-digits)</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="dob" class="block font-medium text-gray-700">Date of Birth</label>
+          <input type="date" id="dob" formControlName="dob" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['dob'].getError('requird')!=null" class="text-red-500">add DOB here!!</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="gender"  class="block font-medium text-gray-700">Gender</label>
+          <select id="gender" formControlName="gender" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <span *ngIf="war['gender'].getError('requird')!=null" class="text-red-500">select gender here!!</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="password" class="block font-medium text-gray-700">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" formControlName="password" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['password'].getError('requird')!=null" class="text-red-500">password is mandatory</span>
+        </div>
+  
+        <div class="w-1/2 p-2">
+          <label for="confirm_password" class="block font-medium text-gray-700">Confirm Password</label>
+          <input type="password" id="confirm_password" placeholder="Confirm Password" formControlName="confpassword" class="w-full py-2 px-3 border-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-500 text-gray-700">
+          <span *ngIf="war['confpassword'].getError('requird')!=null" class="text-red-500">password is mandatory</span>
+          <span *ngIf="war['confpassword'].getError('passwordMatch')!=null" class="text-red-500">password not matching</span>
+        </div>
+  
+        <div class="ml-72">
+          <button [disabled]="addUser.invalid" type="submit" class="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-700 ml-28" (click)="submitForm()">Submit</button>
+        <button class="py-2 px-4 bg-red-500 text-white rounded-md hover:bg-blue-700 ml-5 -mt-20" (click)="clearForm()">clear</button>
+        </div>
+      </form>
+      <div class="flex justify-center text-blue-500 p-4 underline"><a routerLink="/home">Back to home</a></div>
+      <hr>
+      <div class="flex justify-center mt-2">
+        <span>Already have Account?</span><a routerLink="/login" class="text-indigo-700">Login Here</a>
+    </div>
+    </div>
+  </div>
+  

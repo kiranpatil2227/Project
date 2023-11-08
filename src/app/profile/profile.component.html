@@ -1,0 +1,47 @@
+<div class="flex items-center justify-center mt-32">
+  <div class="w-full md:w-2/3 lg:w-1/2 bg-white rounded-lg shadow-lg p-2">
+    <div class="ml-48">
+      <h2 class="text-2xl font-semibold text-blue-600">User Profile</h2>
+  </div>
+    <div >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div class="p-2">
+          <div class="border-b-2 border-gray-300 mb-2">
+            <p class="font-semibold">Id:</p>
+            <p>{{ user?.id }}</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="border-b-2 border-gray-300 mb-2">
+            <p class="font-semibold">First_name:</p>
+            <p>{{ user?.first_name }}</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="border-b-2 border-gray-300 mb-2">
+            <p class="font-semibold">Last_name:</p>
+            <p>{{ user?.last_name }}</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="border-b-2 border-gray-300 mb-2">
+            <p class="font-semibold">Email:</p>
+            <p>{{ user?.email }}</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="border-b-2 border-gray-300 mb-2">
+            <p class="font-semibold">User_name:</p>
+            <p>{{ user?.username }}</p>
+          </div>
+        </div>
+       
+    </div>
+    <div class="mt-6 flex justify-center">
+      <button class="bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-blue-600" (click)="openeditUser()">
+        Edit
+      </button>
+    </div>
+    <div class="flex justify-center text-blue-500 p-4"><a routerLink="/dashboard">Back to Dashboard</a></div>
+  </div>
+</div>

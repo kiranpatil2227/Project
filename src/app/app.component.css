@@ -1,0 +1,10 @@
+.item {
+    text-align: center; /* Center the text horizontally */
+    font-size: 36px; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #007bff; /* Set the text color to a blue shade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    margin: 20px 0; /* Add some top and bottom margin for spacing */
+    margin-top: -10px;
+  }
+  

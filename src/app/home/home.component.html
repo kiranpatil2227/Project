@@ -1,0 +1,46 @@
+<div class="mt-28">
+    <div class="static">
+        <img class="m-auto" src="assets/images/samsung logo.jfif" alt="">
+    </div>
+    <div class="h-12 mt-15 bg-gray-200 rounded-lg shadow-md p-4">
+        <div class="ml-80 -mt-5 text-lg ">
+            <button routerLink="/home"
+                class="ml-10  p-1 text-blue-500 hover:bg-black hover:rounded-full font-bold">Home</button>
+            <button 
+                class=" ml-10  p-1  hover:bg-black hover:rounded-full   text-blue-500 font-bold" (click)="openRegistrationForm()">Register
+                Here!!</button>
+
+            <button  (click)="loginWithKeycloak()"
+                class="ml-10 p-1 hover:bg-black hover:rounded-full   text-blue-500 font-bold">Login Here!!</button>
+
+            <button routerLink="/userdata" class="ml-10  p-1 hover:bg-black hover:rounded-full text-blue-500 font-bold"
+                (click)="showLoginAlert()">User Data</button>
+        </div>
+
+    </div>
+    <div class="explore">
+        <marquee behavior="alternate" direction="">To explore more!! please Register or Log in to your account>>></marquee>
+      </div>
+      
+    <div class="contaner-4">
+        <div>
+            <video class=" w-full" src="assets/images/contaner-2-2 video.mp4" controls autoplay loop
+                style="height: 300px; width: 100%;"></video>
+            <div class="video-text">
+                <div class="fold4">
+                    Galaxy Z Fold4 | Z Flip4
+                </div>
+
+                <div class="buy-now">
+                    <div class="learn">
+                        Learn more
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>

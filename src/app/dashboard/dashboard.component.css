@@ -1,0 +1,30 @@
+.head{
+margin-left: auto;
+}
+
+.sidenav-wrapper {
+    position: relative; /* Change to relative */
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+  mat-sidenav {
+    width: 200px;
+    padding: 20px;
+    position: absolute; /* Add this for sidenav positioning */
+  }
+  mat-sidenav-content {
+    display: flex;
+    justify-content: center;
+    position: absolute; /* Add this for content positioning */
+    top: 0; /* Adjust as needed */
+    left: 220px; /* Should match the width of your sidenav */
+    right: 0;
+    bottom: 0;
+    background-color: white; /* Background color for the content area */
+  }
+  
+
+
