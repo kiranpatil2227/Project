@@ -34,7 +34,21 @@ export class ProfileComponent {
     }
   });
 }
-  
+showProfile = true;
+closeProfile(){
+this.showProfile=false;
+}
+loggedInUserName: string='' // Initialize it with the logged-in username
+
+logout(){
+
+}
+  // Function to set the logged-in username when the user logs in
+  setUserLoggedIn(username: string) {
+    this.loggedInUserName = username;
+    console.log(this.loggedInUserName);
+  }
+
   
  
     

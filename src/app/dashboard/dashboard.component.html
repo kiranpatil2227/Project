@@ -1,13 +1,15 @@
-<div class="flex justify-end mr-6 mt-32 static">
+<div class="flex justify-end mr-6 mt-20 fixed">
     
     <button class=" hover:text-red-700  rounded-sm bg-blue-500 text-white px-3 p-1 font-bold" (click)=" openRegister()">User Data</button>
-    <button class=" hover:text-red-700  rounded-sm bg-blue-500 text-white px-3 p-1 font-bold ml-5" (click)="openProfile()">Profile</button>
-    <button (click)="logout()" class="bg-red-600 rounded-sm  text-white  ml-6 p-1">Logout</button>
+    <button class=" hover:text-red-700  rounded-sm bg-blue-500 text-white px-3 p-1 font-bold ml-5" (click)="toggleProfile()">Profile</button>
+    <button (click)="logout()" class="bg-red-600 rounded-sm  text-white  ml-6 p-1" (click)="logout()">Logout</button>
 </div>
 
 
 <div class="flex justify-center"><h1>Welcome To Your Dashboard!!</h1></div>
 
-
+<div *ngIf="showProfile">
+    <app-profile></app-profile>
+  </div>
 
    

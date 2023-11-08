@@ -17,7 +17,14 @@ KeycloakService
 })
 export class DashboardComponent {
   constructor(private authService: AuthService, private router: Router,public dialog:MatDialog,private KeycloakService:KeycloakService) {}
+  showProfile = false;
 
+  toggleProfile() {
+    this.showProfile = true;
+  }
+  closeProfile(){
+    this.showProfile;
+  }
   logout() {
     this.KeycloakService.logout();
   }
