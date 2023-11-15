@@ -1,40 +1,18 @@
-<div class="mt-28">
+<div class="mt-28 fixed center ">
 
-    <div class="h-12 mt-15 bg-gray-200 rounded-lg shadow-md p-4">
-        <div class="ml-80 -mt-5 text-lg ">
-            <button routerLink="/home"
-                class="ml-10  p-1 text-blue-500 hover:bg-black hover:rounded-full font-bold">Home</button>
-            <button 
-                class=" ml-10  p-1  hover:bg-black hover:rounded-full   text-blue-500 font-bold" (click)="openRegistrationForm()">Register
-                Here!!</button>
+    
+        <div class=" -mt-5 text-lg ">
+            
+          <div class="text-center pb-3">  <button 
+            class=" ml-10  p-1 rounded  bg-blue-500 text-white font-bold" (click)="openRegistrationForm()">Register
+            Here</button> </div>
 
-            <button  (click)="loginWithKeycloak()"
-                class="ml-10 p-1 hover:bg-black hover:rounded-full   text-blue-500 font-bold">Login Here!!</button>
+            <div class="text-center pb-3"><button  (click)="loginWithKeycloak()"
+                class="ml-10 p-1 bg-blue-500 text-white rounded font-bold">Login Here</button> </div>
 
-            <button routerLink="/userdata" class="ml-10  p-1 hover:bg-black hover:rounded-full text-blue-500 font-bold"
-                (click)="showLoginAlert()">User Data</button>
+          <div class="text-center">  <button routerLink="/userdata" class="ml-10  p-1 bg-blue-500 rounded text-white font-bold"
+            (click)="showLoginAlert()">User Data</button></div>
         </div>
 
-    </div>   
-    <div class="contaner-4">
-        <div>
-            <video class=" w-full" src="assets/images/contaner-2-2 video.mp4" controls autoplay loop
-                style="height: 300px; width: 100%;"></video>
-            <div class="video-text">
-                <div class="fold4">
-                    Galaxy Z Fold4 | Z Flip4
-                </div>
-
-                <div class="buy-now">
-                    <div class="learn">
-                        Learn more
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-</div>
+  
+   </div>
